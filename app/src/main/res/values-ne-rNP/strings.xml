@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="news">समाचार</string>
+  <string name="Text_Net_Exception">नेटवर्क अपवाद</string>
+  <string name="about">हाम्रो बारेमा</string>
+  <string name="amazing_world">बिचित्र संसार</string>
+  <string name="collection">संकलन</string>
+  <string name="daily">दैनिक</string>
+  <string name="from_newspaper">"पत्र पत्रिकाबाट "</string>
+  <string name="hint_fail_check_update">version info भेटिएन | कृपया इन्टरनेट चेक गर्नुहोस</string>
+  <string name="hello">हेल्लो</string>
+  <string name="hint_share_to">शेयर</string>
+  <string name="home"></string>
+  <string name="id_collection">संकलन</string>
+  <string name="id_html_content">बिषय</string>
+  <string name="id_pages">पेज</string>
+  <string name="id_pos">स्थान</string>
+  <string name="id_science" translatable="false">बिज्ञान</string>
+  <string name="id_search_text">खोज्नुहोस</string>
+  <string name="interview">अन्तरबार्ता</string>
+  <string name="literature">साहित्य</string>
+  <string name="music">गित संगीत</string>
+  <string name="notif_info_copied">जानकारी क्लिपबोर्डमा प्रतिलिपि गरिएको छैन! तपाईं एक सम्पादन क्षेत्रमा यो टाँस्न सक्नुहुन्छ</string>
+  <string name="notify_add_to_collection">संग्रह मा सफलतापूर्ण थपियो</string>
+  <string name="notify_find_new_version">नया version खोज्नुहोस</string>
+  <string name="notify_current_is_latest">वर्तमान संस्करण नवीनतम संस्करण हो</string>
+  <string name="notify_remove_from_collection">संग्रहबाटा सफलतापूर्ण बाट हटाईयो !!</string>
+  <string name="others">अन्य</string>
+  <string name="pages">पेजहरु</string>
+  <string name="photo_gallery">फोटो फिचर</string>
+  <string name="reading">padhai</string>
+  <string name="id_book">पुस्तक</string>
+  <string name="id_category"></string>
+  <string name="notify_exit_confirm">बाहिर निस्कन फेरी थिच्नुहोस</string>
+  <string name="saved_news">संकलित समाचार</string>
+  <string name="science">बिज्ञान</string>
+  <string name="setting"></string>
+  <string name="share">शेयर</string>
+  <string name="text_anywhere">कहीं</string>
+  <string name="text_app_intro">App परिचय</string>
+  <string name="text_attention">साबधान</string>
+  <string name="text_auto_refresh_summary">"वाईफाई जडित भए स्वचालित रूपमा नेटवर्कबाट डाटा लोड गर्नुहोस "</string>
+  <string name="text_check_update">Update चेक गर्नुहोस</string>
+  <string name="text_clear_cache">cac</string>
+</resources>

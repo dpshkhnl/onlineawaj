@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <list>
+        <site>
+            <url>http://www.xinhuanet.com/local/news_province.xml</url>
+            <name>National</name>
+        </site>
+        <site>
+            <url>http://www.xinhuanet.com/world/news_world.xml</url>
+            <name>International</name>
+        </site>
+        <site>
+            <url>http://www.xinhuanet.com/mil/news_mil.xml</url>
+            <name>Sports</name>
+        </site>
+        <site>
+            <url>http://www.xinhuanet.com/photo/news_photo.xml</url>
+            <name>Intersting</name>
+        </site>
+        <site>
+            <url>http://ent.news.cn/news_ent.xml</url>
+            <name>Science</name>
+        </site>
+        <site>
+            <url>http://www.xinhuanet.com/shuhua/news_calligraphy.xml</url>
+            <name>Health</name>
+        </site>
+        <site>
+            <url>http://www.xinhuanet.com/tech/news_tech.xml</url>
+            <name>Aboard</name>
+        </site>
+        <site>
+            <url>http://www.xinhuanet.com/overseas/news_overseas.xml</url>
+            <name>News</name>
+        </site>
+
+    </list>
+

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<list>
+  <site>
+    <url>http://onlineaawaj.com/feed?format=xml</url>
+    <name>समाचार</name>
+  </site>
+  <site>
+    <url>http://onlineaawaj.com/news/category/desh/feed</url>
+    <name>देश</name>
+  </site>
+  <site>
+    <url>http://onlineaawaj.com/news/category/bishow/feed</url>
+    <name>विश्व</name>
+  </site>
+  <site>
+    <url>http://onlineaawaj.com/news/category/sports/feed</url>
+    <name>खेलकुद</name>
+  </site>
+  <site>
+    <url>http://www.onlineaawaj.com/news/category/rochak/feed</url>
+    <name>रोचक</name>
+  </site>
+  <site>
+    <url>http://onlineaawaj.com/news/category/science/feed</url>
+    <name>बिज्ञान</name>
+  </site>
+  <site>
+    <url>http://onlineaawaj.com/news/category/health/feed</url>
+    <name>स्वास्थ्य</name>
+  </site>
+  <site>
+    <url>http://onlineaawaj.com/news/category/prawaas/feed</url>
+    <name>प्रवास</name>
+  </site>
+
+</list>
+

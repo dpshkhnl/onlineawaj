@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<list>
+  <site>
+    <url>http://onlineaawaj.com/news/category/gazal/feed</url>
+    <name>गजल</name>
+  </site>
+  <site>
+    <url>http://onlineaawaj.com/news/category/poem/feed</url>
+    <name>कबिता</name>
+  </site>
+  <site>
+    <url>http://onlineaawaj.com/news/category/muktak/feed</url>
+    <name>मुक्तक</name>
+  </site>
+  <site>
+    <url>http://onlineaawaj.com/news/category/story/feed</url>
+    <name>कथा</name>
+  </site>
+
+</list>
+

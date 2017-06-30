@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<list>
+  <site>
+    <url>http://onlineaawaj.com/news/category/movie/feed</url>
+    <name>चलचित्र</name>
+  </site>
+  <site>
+    <url>http://onlineaawaj.com/news/category/music/feed</url>
+    <name>गीत संगीत</name>
+  </site>
+  <site>
+    <url>http://onlineaawaj.com/news/category/cine-news/feed</url>
+    <name>सिने समाचार</name>
+  </site>
+
+
+</list>
+
