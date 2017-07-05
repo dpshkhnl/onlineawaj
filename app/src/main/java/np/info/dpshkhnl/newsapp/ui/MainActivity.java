@@ -21,6 +21,10 @@ package np.info.dpshkhnl.newsapp.ui;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -136,33 +140,33 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
   private void switchFragment() {
     if (currentFragment instanceof DailyFragment) {
-      switchFragment(currentFragment, getString(R.string.daily), R.menu.menu_daily);
+      switchFragment(currentFragment, getString(R.string.daily), R.menu.menu_news);
     } else if (currentFragment instanceof BaseReadingFragment) {
-      switchFragment(currentFragment, getString(R.string.reading), R.menu.menu_reading);
+      switchFragment(currentFragment, getString(R.string.reading), R.menu.menu_news);
     } else if (currentFragment instanceof BaseNewsFragment) {
       switchFragment(currentFragment, getString(R.string.news), R.menu.menu_news);
     } else if (currentFragment instanceof BaseLiteratureFragment) {
-      switchFragment(currentFragment, getString(R.string.literature), R.menu.menu_science);
+      switchFragment(currentFragment, getString(R.string.literature), R.menu.menu_news);
     } else if (currentFragment instanceof BaseCollectionFragment) {
-      switchFragment(currentFragment, getString(R.string.collection), R.menu.menu_daily);
+      switchFragment(currentFragment, getString(R.string.collection), R.menu.menu_news);
     }
     else if (currentFragment instanceof BaseInterviewFragment) {
-      switchFragment(currentFragment, getString(R.string.interview), R.menu.menu_daily);
+      switchFragment(currentFragment, getString(R.string.interview), R.menu.menu_news);
     }
     else if (currentFragment instanceof BaseVideoFragment) {
-      switchFragment(currentFragment, getString(R.string.video), R.menu.menu_video);
+      switchFragment(currentFragment, getString(R.string.video), R.menu.menu_news);
     }
     else if (currentFragment instanceof BaseOthersFragment) {
-      switchFragment(currentFragment, getString(R.string.others), R.menu.menu_video);
+      switchFragment(currentFragment, getString(R.string.others), R.menu.menu_news);
     }
     else if (currentFragment instanceof BaseAmazingFragment) {
-      switchFragment(currentFragment, getString(R.string.amazing_world), R.menu.menu_video);
+      switchFragment(currentFragment, getString(R.string.amazing_world), R.menu.menu_news);
     }
     else if (currentFragment instanceof BaseViewsFragment) {
-      switchFragment(currentFragment, getString(R.string.views), R.menu.menu_video);
+      switchFragment(currentFragment, getString(R.string.views), R.menu.menu_news);
     }
     else if (currentFragment instanceof BaseNewspaperFragment) {
-      switchFragment(currentFragment, getString(R.string.from_newspaper), R.menu.menu_video);
+      switchFragment(currentFragment, getString(R.string.from_newspaper), R.menu.menu_news);
     }
   }
 
@@ -171,9 +175,16 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     fragmentTransaction.replace(R.id.framelayout, fragment);
     fragmentTransaction.commit();
     getSupportActionBar().setTitle(title);
+
+
+    Bitmap icon = BitmapFactory.decodeResource(getResources(), R.drawable.logo); //Converting drawable into bitmap
+    Bitmap new_icon = resizeBitmapImageFn(icon, 300); //resizing the bitmap
+    Drawable d = new BitmapDrawable(getResources(),new_icon);
+    getSupportActionBar().setIcon(d);
+
     if (menu != null) {
       menu.clear();
-      getMenuInflater().inflate(resourceMenu, menu);
+     // getMenuInflater().inflate(resourceMenu, menu);
     }
 
   }
@@ -183,17 +194,17 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     setSupportActionBar(toolbar);
     header = new AccountHeaderBuilder().withActivity(this)
       .withCompactStyle(false)
-               .addProfiles(new ProfileDrawerItem().withIcon(R.drawable.logo)
+       .addProfiles(new ProfileDrawerItem().withIcon(R.drawable.logo)
                         .withEmail(getString(R.string.app_name))
                         .withName(getString(R.string.author_name)))
-                /*.withOnAccountHeaderListener(new AccountHeader.OnAccountHeaderListener() {
+                .withOnAccountHeaderListener(new AccountHeader.OnAccountHeaderListener() {
                     @Override
                     public boolean onProfileChanged(View view, IProfile profile, boolean current) {
                         Intent i = new Intent(MainActivity.this, AboutActivity.class);
                         startActivity(i);
                         return false;
                     }
-                })*/
+                })
       .build();
     header.getHeaderBackgroundView().setBackgroundColor(ContextCompat.getColor(this, R.color.colorPrimary));
     drawer = new DrawerBuilder().withActivity(this)
@@ -210,9 +221,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
           .withTextColor(Settings.isNightMode ? ContextCompat.getColor(this, R.color.white) : ContextCompat.getColor(this, R.color.text_color)),
         new PrimaryDrawerItem().withName(R.string.video).withIcon(R.mipmap.ic_video).withIdentifier(R.mipmap.ic_video)
           .withTextColor(Settings.isNightMode ? ContextCompat.getColor(this, R.color.white) : ContextCompat.getColor(this, R.color.text_color)),
-        new PrimaryDrawerItem().withName(R.string.photo_gallery).withIcon(R.mipmap.ic_reading).withIdentifier(R.mipmap.ic_reading)
+      /*  new PrimaryDrawerItem().withName(R.string.photo_gallery).withIcon(R.mipmap.ic_reading).withIdentifier(R.mipmap.ic_reading)
           .withTextColor(Settings.isNightMode ? ContextCompat.getColor(this, R.color.white) : ContextCompat.getColor(this, R.color.text_color)),
-        new PrimaryDrawerItem().withName(R.string.interview).withIcon(R.mipmap.ic_interview).withIdentifier(R.mipmap.ic_interview)
+     */   new PrimaryDrawerItem().withName(R.string.interview).withIcon(R.mipmap.ic_interview).withIdentifier(R.mipmap.ic_interview)
           .withTextColor(Settings.isNightMode ? ContextCompat.getColor(this, R.color.white) : ContextCompat.getColor(this, R.color.text_color)),
         new PrimaryDrawerItem().withName(R.string.from_newspaper).withIcon(R.mipmap.ic_newspaper).withIdentifier(R.mipmap.ic_newspaper)
           .withTextColor(Settings.isNightMode ? ContextCompat.getColor(this, R.color.white) : ContextCompat.getColor(this, R.color.text_color)),
@@ -236,11 +247,11 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         @Override
         public boolean onItemClick(View view, int position, IDrawerItem drawerItem) {
           switch (drawerItem.getIdentifier()) {
-            case R.mipmap.ic_home:
-              if (currentFragment instanceof NewsFragment) {
+            case R.mipmap.ic_news:
+              if (currentFragment instanceof BaseNewsFragment) {
                 return false;
               }
-              currentFragment = new NewsFragment();
+              currentFragment = new BaseNewsFragment();
               break;
             case R.mipmap.ic_literature:
               if (currentFragment instanceof BaseLiteratureFragment) {
@@ -322,7 +333,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
   @Override
   public boolean onCreateOptionsMenu(Menu menu) {
     this.menu = menu;
-    getMenuInflater().inflate(R.menu.menu_daily, menu);
+    getMenuInflater().inflate(R.menu.menu_news, menu);
     return true;
   }
 
@@ -367,27 +378,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     return true;
   }
 
-  private void showSearchDialog() {
-    final EditText editText = new EditText(this);
-    editText.setGravity(Gravity.CENTER);
-    editText.setSingleLine();
-    new AlertDialog.Builder(this)
-      .setTitle(getString(R.string.text_search_books))
-      .setIcon(R.mipmap.ic_search)
-      .setView(editText)
-      .setPositiveButton(getString(R.string.text_ok), new DialogInterface.OnClickListener() {
-        @Override
-        public void onClick(DialogInterface dialog, int which) {
-          if (Utils.hasString(editText.getText().toString())) {
-            Intent intent = new Intent(MainActivity.this, SearchBooksActivity.class);
-            Bundle bundle = new Bundle();
-            bundle.putString(getString(R.string.id_search_text), editText.getText().toString());
-            intent.putExtras(bundle);
-            startActivity(intent);
-          }
-        }
-      }).show();
-  }
 
   @Override
   public void onBackPressed() {
@@ -460,5 +450,31 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
   @Override
   public void onAccuracyChanged(Sensor sensor, int accuracy) {
 
+  }
+
+  private Bitmap resizeBitmapImageFn(
+    Bitmap bmpSource, int maxResolution){
+    int iWidth = bmpSource.getWidth();
+    int iHeight = bmpSource.getHeight();
+    int newWidth = iWidth ;
+    int newHeight = iHeight ;
+    float rate = 0.0f;
+
+    if(iWidth > iHeight ){
+      if(maxResolution < iWidth ){
+        rate = maxResolution / (float) iWidth ;
+        newHeight = (int) (iHeight * rate);
+        newWidth = maxResolution;
+      }
+    }else{
+      if(maxResolution < iHeight ){
+        rate = maxResolution / (float) iHeight ;
+        newWidth = (int) (iWidth * rate);
+        newHeight = maxResolution;
+      }
+    }
+
+    return Bitmap.createScaledBitmap(
+      bmpSource, newWidth, newHeight, true);
   }
 }

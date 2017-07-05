@@ -14,18 +14,17 @@
   <string name="amazing_world">Amazing World</string>
   <string name="others">Others</string>
     <string name="music">Music</string>
-    <string name="setting" translatable="false">Setting</string>
+    <string name="setting">Setting</string>
     <string name="about">About</string>
     <string name="shake" translatable="false">Shake</string>
-    <string name="text_ebook">EBook</string>
-    <string name="id_pos">position</string>
+  <string name="id_pos">position</string>
     <string name="id_url" translatable="false">url</string>
     <string name="id_html_content">content</string>
     <string name="daily">Daily</string>
     <string name="Text_Net_Exception">Network Exception</string>
     <string name="id_book">book</string>
-    <string name="text_noinfo">\n\n\n\n\t\t\t\t\t\t\t\t\tSorry,No Message Here</string>
-    <string name="text_debug_data">"Debug Data"</string>
+    <string name="text_noinfo" translatable="false">\n\n\n\n\t\t\t\t\t\t\t\t\tSorry,No Message Here</string>
+    <string name="text_debug_data" translatable="false">"Debug Data"</string>
     <string name="text_pubdate">"Publish Date "</string>
     <string name="id_pages">"Page "</string>
     <string name="text_price">"Price "</string>
@@ -33,8 +32,7 @@
     <string name="id_search_text">search_text</string>
     <string name="text_search_result">Search Result</string>
     <string name="text_ok">OK</string>
-    <string name="text_search_books">"  Search Books"</string>
-    <string name="id_category">category</string>
+  <string name="id_category">category</string>
     <string name="text_collection">Collection</string>
     <string name="text_refresh_success">Refresh Successfully</string>
     <string name="notify_remove_from_collection">Removed from collection successful!!</string>
@@ -46,17 +44,17 @@
     <string name="text_language">Language</string>
     <string name="id_language" translatable="false">language</string>
     <string name="text_preference">Preference</string>
-    <string name="text_auto_refresh">Auto Refresh</string>
+    <string name="text_auto_refresh" translatable="false">Auto Refresh</string>
     <string name="text_auto_refresh_summary">Load data from network automatically if WIFI is connected</string>
     <string name="text_night_mode">Night Mode</string>
     <string name="text_shake_to_return">Shake to return</string>
     <string name="text_no_pic_mode">Auto save traffic</string>
     <string name="text_no_pic_mode_summary">Load pictures only if WIFI is connected</string>
     <string name="text_clear_cache">Clear Cache</string>
-    <string name="text_clear_cache_summary">Clear Leisure\'s Cache</string>
+    <string name="text_clear_cache_summary">Clear App\'s Cache</string>
     <string name="text_network">Network</string>
     <string name="text_remove">Remove</string>
-    <string name="text_author">Author</string>
+    <string name="text_author" translatable="false">Author</string>
 
     <string-array name="langs" translatable="false">
         <item>English</item>
@@ -84,27 +82,23 @@
     <string name="text_exit_confirm_summary">Press back key twice to exit</string>
     <string name="notify_exit_confirm">Press again to exit</string>
     <string name="text_current_version">Current Version</string>
-    <string name="text_share_leisure">Share Leisure</string>
+    <string name="text_share_leisure">Share App</string>
     <string name="text_check_update">Check Update</string>
-    <string name="text_good_job">Good Job</string>
-    <string name="text_good_job_summary">Give me a star at https://github.com/MummyDing/Leisure</string>
-    <string name="text_blog" translatable="false">Blog</string>
+  <string name="text_blog" translatable="false">Website</string>
     <string name="author_blog" translatable="false">www.webbank.com</string>
-    <string name="text_author_github">Author GitHub</string>
+    <string name="text_author_github" translatable="false">Author GitHub</string>
     <string name="author_github" translatable="false">https://github.com/dpshkhnl</string>
-    <string name="text_copyright">Copyright</string>
+    <string name="text_copyright" translatable="false">Copyright</string>
     <string name="text_data">Data</string>
     <string name="text_email">E-Mail</string>
-    <string name="text_data_summary">The data are from public API,all rights belong to original author</string>
-    <string name="text_attention">Attention</string>
+  <string name="text_attention">Attention</string>
   <string name="text_license" translatable="false">License</string>
     <string name="leisure_version" translatable="false">" Release Version"</string>
     <string name="notify_current_is_latest">Current Version is the latest Version</string>
     <string name="notify_find_new_version">"Find new Version "</string>
     <string name="notif_info_copied">Info copied to Clipboard! You can paste it to an edit area</string>
     <string name="project_url" translatable="false">github.com/dpshkhnl</string>
-    <string name="text_share_info">Welcome to use Leisure,it contains Zhihu Daily,Guokr Scientific,XinhuaNet News and Douban Books.You can download it at http://coolapk.com/apk/com.mummyding.app.leisure</string>
-    <string name="text_demo_video">Demo Video</string>
+  <string name="text_demo_video" translatable="false">Demo Video</string>
     <string name="text_app_intro">App Introduction</string>
     <string name="id_title" translatable="false">title</string>
     <string name="id_body" translatable="false">body</string>
@@ -112,12 +106,11 @@
     <string name="id_id" translatable="false">id</string>
     <string name="hint_share_to">Share to...</string>
     <string name="share">share</string>
-    <string name="text_share_from">"share from "</string>
+    <string name="text_share_from" translatable="false">"share from "</string>
     <string name="notify_add_to_collection">add to collection successful</string>
     <string name="id_small_image" translatable="false">id_small_image</string>
     <string name="id_science" translatable="false">id_science</string>
-    <string name="text_hot"> hot </string>
-    <string name="id_swipe_back" translatable="false">swipe_back</string>
+  <string name="id_swipe_back" translatable="false">swipe_back</string>
     <string name="text_swipe_to_return">Swipe to Return</string>
     <string name="text_day_mode">Day Mode</string>
     <string name="hint_fail_check_update">Fail to get version info,please check your network setting</string>

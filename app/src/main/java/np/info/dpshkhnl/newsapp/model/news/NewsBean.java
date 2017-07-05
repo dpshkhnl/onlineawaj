@@ -37,6 +37,15 @@ public class NewsBean {
     private String description;
     private String pubTime;
     private String author;
+    private String imageUrl;
+
+  public String getImageUrl() {
+    return imageUrl;
+  }
+
+  public void setImageUrl(String imageUrl) {
+    this.imageUrl = imageUrl;
+  }
 
   public byte[] getImage() {
     return image;
@@ -119,6 +128,16 @@ public class NewsBean {
       return pubTime;
     }
     private String formatClearHtmlLabel(String string){
+
+      String ImageUrl="";
+      String[] anArray = string.split("=");
+      for (int i=0; i < anArray.length; i++){
+        if (anArray[i].contains("alt")){
+          ImageUrl = anArray[i].replace("alt","").replace("\"","");
+          ImageUrl = ImageUrl.trim();
+        }
+    }
+    setImageUrl(ImageUrl);
       return  this.description = Utils.RegexReplace("<[^>\n]*>",string,"");
     }
 

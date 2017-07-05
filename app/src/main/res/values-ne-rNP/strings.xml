@@ -15,7 +15,6 @@
   <string name="id_html_content">बिषय</string>
   <string name="id_pages">पेज</string>
   <string name="id_pos">स्थान</string>
-  <string name="id_science" translatable="false">बिज्ञान</string>
   <string name="id_search_text">खोज्नुहोस</string>
   <string name="interview">अन्तरबार्ता</string>
   <string name="literature">साहित्य</string>
@@ -34,12 +33,44 @@
   <string name="notify_exit_confirm">बाहिर निस्कन फेरी थिच्नुहोस</string>
   <string name="saved_news">संकलित समाचार</string>
   <string name="science">बिज्ञान</string>
-  <string name="setting"></string>
+  <string name="setting">सेत्टिंग</string>
   <string name="share">शेयर</string>
   <string name="text_anywhere">कहीं</string>
   <string name="text_app_intro">App परिचय</string>
   <string name="text_attention">साबधान</string>
   <string name="text_auto_refresh_summary">"वाईफाई जडित भए स्वचालित रूपमा नेटवर्कबाट डाटा लोड गर्नुहोस "</string>
   <string name="text_check_update">Update चेक गर्नुहोस</string>
-  <string name="text_clear_cache">cac</string>
+  <string name="text_clear_cache">"Cache "</string>
+  <string name="video">भिडियो</string>
+  <string name="views">विचार \\ दृष्टिकोण</string>
+  <string name="text_share_leisure">App शेयर गर्नुहोस</string>
+  <string name="text_swipe_to_return">पछि जान  Swipe गर्नुहोस</string>
+  <string name="text_shake_to_return">पछि जान  Shake गर्नुहोस</string>
+  <string name="text_search_result">खोज नतिजा</string>
+  <string name="text_search_by_keyword">Keyword बाट खोज्नुहोस</string>
+  <string name="text_search_by_category">बर्ग बाट खोज्नुहोस</string>
+  <string name="text_search">खोज्नुहोस</string>
+  <string name="text_remove">हटाउनु होस्</string>
+  <string name="text_refresh_success">Refresh सफल भयो</string>
+  <string name="text_pubdate">प्रकाशित मिति</string>
+  <string name="text_price">मूल्य</string>
+  <string name="text_preference">प्रथाकमिता</string>
+  <string name="text_ok">हुन्छ</string>
+  <string name="text_no_pic_mode_summary">wifi मा मात्र फोटो देखाउने</string>
+  <string name="text_no_pic_mode">डाटा बचत योजना</string>
+  <string name="text_night_mode">रात्री योजना</string>
+  <string name="text_network">इन्टरनेट सुबिदा</string>
+  <string name="text_license" translatable="false"></string>
+  <string name="text_left_only">दाया मात्र</string>
+  <string name="text_language">भाषा</string>
+  <string name="text_exit_confirm_summary">बाहिर जानलाई पछि बटन दुइ पटक थिच्नुहोस</string>
+  <string name="text_exit_confirm">बाहिर जानुहोस</string>
+  <string name="text_email">इमेल</string>
+  <string name="text_day_mode">दिन योजना</string>
+  <string name="text_data">डाटा</string>
+  <string name="text_current_version">आहिलेको version</string>
+  <string name="text_copyright"></string>
+  <string name="text_collection">संग्रह</string>
+  <string name="text_clear_cache_summary">"सबै डाटा मेटाउनुहोस "</string>
+  <string name="text_clear_cache_successful">सबै डाटा मेटियो</string>
 </resources>

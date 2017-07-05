@@ -16,30 +16,33 @@
         android:layout_height="match_parent"
         android:padding="@dimen/item_padding"
         android:background="?attr/background">
-        <TextView
-            android:id="@+id/title"
-            android:textSize="20sp"
-            android:textColor="?attr/textColor"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="5dp"/>
+
+      <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:textColor="?attr/textColor"
+        android:textSize="20sp"
+        android:textStyle="bold" />
       <ImageView
         android:id="@+id/image"
         android:layout_below="@+id/title"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="150dp"
          />
-        <TextView
-            android:textColor="?attr/textLight"
-            android:paddingTop="10dp"
-          android:layout_below="@+id/title"
-            android:paddingBottom="10dp"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp"
-            android:id="@+id/description"
-            android:textSize="15sp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+
+      <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"
+        android:textColor="?attr/textColor"
+        android:textSize="15sp" />
 
 
 
@@ -50,16 +53,16 @@
             android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/image"
         android:layout_toEndOf="@+id/image">
-            <TextView
-                android:id="@+id/date"
-                android:textSize="13sp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingTop="10dp"
-                android:paddingBottom="5dp"
-                android:textColor="?attr/textLight"
-                />
+
+        <TextView
+          android:id="@+id/date"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:paddingBottom="5dp"
+          android:paddingTop="10dp"
+          android:textColor="?attr/textColor"
+          android:textSize="13sp" />
             <CheckBox
                 android:id="@+id/collect_cb"
                 style="@style/CustomCollectTheme"

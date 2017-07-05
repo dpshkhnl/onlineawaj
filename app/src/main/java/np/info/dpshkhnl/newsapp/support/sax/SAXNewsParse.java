@@ -20,6 +20,8 @@
 package np.info.dpshkhnl.newsapp.support.sax;
 
 import np.info.dpshkhnl.newsapp.model.news.NewsBean;
+import np.info.dpshkhnl.newsapp.support.HttpUtil;
+import np.info.dpshkhnl.newsapp.support.Settings;
 
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
@@ -48,12 +50,16 @@ public class SAXNewsParse  {
         xmlReader.parse(new InputSource(is));
         items = saxHandler.getItems();
 
-      for(NewsBean news : items)
-      {
-        String urlString = "http://www.onlinekhabar.com/wp-content/uploads/2017/03/UML-Jhapa-11.jpg";
-        URL myURL = new URL(urlString);
-        byte[] bitmapdata = downloadUrl(myURL);
-        news.setImage(bitmapdata);
+      for(NewsBean news : items) {
+        String urlString = news.getImageUrl();
+        if(HttpUtil.isWIFI == true || Settings.getInstance().getBoolean(Settings.NO_PIC_MODE, false) == false) {
+
+          if (urlString != null && !urlString.equals("")) {
+            URL myURL = new URL(urlString);
+            byte[] bitmapdata = downloadUrl(myURL);
+            news.setImage(bitmapdata);
+          }
+        }
         news.setPubTime(news.getAuthor()+" "+news.getPubTime());
       }
         return items;
